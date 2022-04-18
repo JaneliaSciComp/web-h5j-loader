@@ -1,7 +1,7 @@
 {
   "name": "@janelia/web-h5j-loader",
-  "version": "1.0.0",
-  "description": "Loads H5J data files",
+  "version": "0.0.1",
+  "description": "Lets browser apps load H5J data files",
   "main": "dist/web-h5j-loader.js",
   "module": "dist/web-h5j-loader.js",
   "scripts": {
