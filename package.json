@@ -1,0 +1,55 @@
+{
+  "name": "@janelia/web-h5j-loader",
+  "version": "1.0.0",
+  "description": "Loads H5J data files",
+  "main": "dist/web-h5j-loader.js",
+  "module": "dist/web-h5j-loader.js",
+  "scripts": {
+    "test": "jest",
+    "build": "npx babel src --out-dir dist",
+    "prepublishOnly": "npm run build"
+  },
+  "author": "Philip M. Hubbard",
+  "license": "Janelia Open Source License",
+  "eslintConfig": {
+    "extends": [
+      "airbnb",
+      "plugin:jsx-a11y/recommended",
+      "prettier",
+      "plugin:jest/all"
+    ],
+    "plugins": [
+      "jsx-a11y",
+      "prettier",
+      "jest"
+    ],
+    "rules": {
+      "no-console": "off",
+      "max-classes-per-file": "off",
+      "jest/prefer-spy-on": "off",
+      "jest/no-conditional-in-test": "off",
+      "jest/no-conditional-expect": "off"
+    },
+    "env": {
+      "browser": true,
+      "jest": true
+    }
+  },
+  "dependencies": {
+    "@ffmpeg/core": "^0.10.0",
+    "@ffmpeg/ffmpeg": "^0.10.1",
+    "jsfive": "0.3.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-jest": "^26.1.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^27.3.1",
+    "prettier": "^2.6.2"
+  }
+}

@@ -1,0 +1,15 @@
+attrs:
+  image_size: [256.0, 128.0, 64.0]
+  voxel_size: [0.44, 0.44, 0.44]
+  channel_spec: r
+groups:
+  Channels:
+    attrs:
+      frames: [64]
+      height: [128]
+      pad_bottom: [0]
+      pad_right: [0]
+      width: [256]
+    groups:
+      Channel_0:
+        attrs: {content_type: reference}
