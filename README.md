@@ -26,11 +26,11 @@ As an alternative, the original 12-bit values can be read into a 16-bit [`Uint16
 ```javascript
 import { openH5J, getH5JAttrs, readH5JChannelUint16 } from '@janelia/web-h5j-loader';
 const onChange = async (event) => {
-try {
-    const fileH5J = await openH5J(event.target.files[0]);
-    const attrs = getH5JAttrs(fileH5J);
-    const dataUint16 = await readH5JChannelUint16(attrs.channels.names[0], fileH5J);
-    ...
+  try {
+      const fileH5J = await openH5J(event.target.files[0]);
+      const attrs = getH5JAttrs(fileH5J);
+      const dataUint16 = await readH5JChannelUint16(attrs.channels.names[0], fileH5J);
+      ...
     } catch (e) {
       console.log(e.message);
     }
