@@ -8,7 +8,11 @@ The HDF5 container is read with the [`jsfive` module](https://www.npmjs.com/pack
 
 ## Usage
 
-The following code loads an H5J file from a URL and decompresses one channel of data into 8-bit values in a [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array):
+First, install the [NPM module](https://www.npmjs.com/package/@janelia/web-h5j-loader):
+```
+npm install @janelia/web-h5j-loader
+```
+Then, the following code loads an H5J file from a URL and decompresses one channel of data into 8-bit values in a [`Uint8Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array):
 ```javascript
 import { openH5J, getH5JAttrs, readH5JChannelUint8 } from '@janelia/web-h5j-loader';
 try {
