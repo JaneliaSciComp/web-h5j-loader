@@ -1,6 +1,6 @@
-[![DOI](https://zenodo.org/badge/482910945.svg)](https://zenodo.org/doi/10.5281/zenodo.6772505)
-
 # web-h5j-loader
+
+[![DOI](https://zenodo.org/badge/482910945.svg)](https://zenodo.org/doi/10.5281/zenodo.6772505)
 
 ## Summary
 
